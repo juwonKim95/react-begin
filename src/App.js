@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import ClassComponent from './components/ClassComponent';
+import ClassComponent2 from './components/ClassComponent2';
+import ClassCounter from './components/ClassCounter';
+import FuncComponent2 from './components/FuncComponent2';
+
 
 function App() {
   return (
+    //{ name: "green", children: "안녕하세요"} => props
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FuncComponent2 name="green">안녕하세요</FuncComponent2>
+      <ClassComponent2 name="abc">히히히</ClassComponent2>
     </div>
   );
 }
